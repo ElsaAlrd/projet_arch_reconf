@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity FIFO is
+    Port (
+        CLK : in STD_LOGIC;
+        RESET : in STD_LOGIC;
+        DATA_IN : in STD_LOGIC_VECTOR(7 downto 0);  -- 8 bits par pixel
+        WRITE_EN : in STD_LOGIC;
+        READ_EN : in STD_LOGIC;
+        DATA_OUT : out STD_LOGIC_VECTOR(7 downto 0);
+        EMPTY : out STD_LOGIC;
+        FULL : out STD_LOGIC
+    );
+end FIFO;
+
+architecture Behavioral of FIFO is
+    -- Implementation interne basée sur des registres ou générée par IP
+begin
+end Behavioral;
